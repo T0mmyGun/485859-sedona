@@ -7,7 +7,7 @@
   <body>
 <header class="page-header">
 
-  <nav>
+  <nav class="main-navigation">
     <ul>
       <li><a href="#">Информация</a></li>
       <li><a href="#">Фото и видео</a></li>
@@ -15,86 +15,97 @@
       <li><a href="#">Гостиницы</a></li>
     </ul>
 
-    <img class="logo-header" src="http://placehold.it/150x100"/>
+    <img class="logo-header" src="http://placehold.it/100x60" alt="Логотип"/>
   </nav>
 
 </header>
 
 
 <main>
+  <H1 class="visualy-hidden"> Седона</h1>
 
-  <section class="Preview-block">
+  <section class="Pre-block">
     <span></span>
     <span></span>
     <span></span>
   </section>
 
-  <article Class="preview">
+  <article Class="demo-block">
 <p> Седона-небольшой городок в Аризоне, заслуживающий большего.</p>
 <p>Рассмотрим 5 причин, почему Седона круче чем гранд каньон!</p>
   </article>
 
-<section class="tile-block">
-      <div class="tile blue-tile">
-          <h2>Настоящий городок</h2>
+<section class="features">
+  <h2 class="visualy-hidden">Преимущества Седоны</h2>
+  <ul>
+      <li class="tile long-tile">
+        <div class="blue-tile">
+          <h3>Настоящий городок</h3>
           <p>— №1 —</p>
           <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
-      </div>
+      </li>
 
       <div class="img-tile">
-          <img src="http://placehold.it/150x100" class="tile-picture"/>
+          <img src="http://placehold.it/300x100" class="tile-picture"/>
       </div>
+    </li>
 
-      <div class="tile white-tile">
-          <h2>Жилье</h2>
+      <li class="tile item-tile houses">
+        <h2 class="visualy-hidden">Что есть в Седоне</h2>
+        <ul>
+        <li>  <h3>Жилье</h3>
           <p> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-      </div>
+      </li>
 
 
-      <div class="tile white-tile">
-          <h2>Еда</h2>
+      <li class="tile item-tile food ">
+          <h3>Еда</h3>
           <p>Всегда заказывайте фирменый бургер, Вы не разочаруетесь!</p>
-      </div>
+      </li>
 
-      <div class="tile white-tile">
-          <h2>Сувениры</h2>
+      <li class="tile item-tile souv">
+          <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
-      </div>
-
+      </li>
+    </ul>
+  </li>
+  <li class="tile long-tile">
       <div class="img-tile">
           <img src="http://placehold.it/150x100" class="tile-picture"/>
       </div>
 
       <div class="tile blue-tile">
-          <h2>Там есть мост дьявола</h2>
+          <h3>Там есть мост дьявола</h3>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно осмелитесь</p>
       </div>
+    </li>
 
-      <div class="tile white-tile">
-          <h2>Небольшая площадь</h2>
+      <li class="tile white-tile">
+          <h3>Небольшая площадь</h3>
           <p>— №3 —</p>
           <p>Все достопримечательности находятся очень близко</p>
-      </div>
+      </li>
 
-      <div class="tile white-tile">
-          <h2>Красивая дорога</h2>
+      <li class="tile white-tile">
+          <h3>Красивая дорога</h3>
           <p>— №4 —</p>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-      </div>
+      </li>
 
-      <div class="tile white-tile">
-          <h2>Мало туристов</h2>
+      <li class="tile white-tile">
+          <h3>Мало туристов</h3>
           <p>— №5 —</p>
           <p>Большинство едет в гранд каньон и толпится там</p>
-      </div>
+      </li>
 
 </section>
 
 <section class="booking-preview">
     <p>Заинтересовались?</p>
     <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <span Class="btn book-btn">Поиск гостиницы в Седоне</span>
+    <a Class="btn book-btn" href="#">Поиск гостиницы в Седоне</a>
+    <!--Открывает следующий блок, с помощью js-->
       <div class="booking-block">
 <!-- Тут будут поля формы-->
           <a class="btn" href="#">Найти</a>
@@ -103,24 +114,24 @@
 <!-- Тут будет карта-->
 </main>
 
-<footer>
-  <span class="heshtag">#visitsedona</span>
+<footer class="page-footer">
+  <span class="hashtag">#visitsedona</span>
 
 
   <ul class="social">
     <!-- Картинки соц. кнопок будут вставлены в css-->
     <li>
-      <a href="twitter.com" class="social-btn tw">
+      <a href="twitter.com" class="social-btn tw">Twitter.com</a>
     </li>
     <li>
-      <a href="facebook.com" class="social-btn fb">
+      <a href="facebook.com" class="social-btn fb">facebook.com</a>
     </li>
     <li>
-      <a href="youtube.com" class="social-btn yt">
+      <a href="youtube.com" class="social-btn yt">youtube.com</a>
     </li>
     <ul>
 
-      <span>Website by</span><span class="HtmlA">Html Academy</span>
+      <span>Website by</span><a href="htmlacademy.ru" class="HtmlA">Html Academy</a>
 </footer>
   </body>
 </html>
