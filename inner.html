@@ -1,97 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="page-header">
 
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
-        </ul>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-        <img class="logo-header" src="http://placehold.it/100x60" alt="Логотип"/>
-      </nav>
+<body>
+  <header class="page-header">
 
-    </header>
-
-    <section class="form">
-        <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!--Здесь будет форма-->
-      </section>
-
-      <section class="items">
-        <h2 class="visually-hidden">Список гостиниц</h2>
-              <ul>
-                <li>
-
-                  <h3>Amara resort & spa </h3>
-                  <span>Гостиница</span>
-                    <span>От 4000р.</span>
-                  <a href="#" class="btn blue-btn">Подробнее</a>
-                  <a href="#" class="btn brwn-btn">Забронировать</a>
-                <p class="item-img">
-                    <a href="#">
-                  <img SRC="http://placehold.it/100x70" Alt="Amara resort & spa">
-                     </a>
-                </p>
-                </li>
-
-                <li>
-
-                  <h3>Desert qual inn</h3>
-                    <span>Мотель</span>
-                      <span>От 3000р.</span>
-                  <a href="#" class="btn blue-btn">Подробнее</a>
-                  <a href="#" class="btn  brwn-btn">Забронировать</a>
-                  <p class="item-img">
-                    <a href="#">
-                  <img SRC="http://placehold.it/100x70" Alt="Desert qual inn">
-                     </a>
-                </p>
-                   </li>
-
-                <li>
-
-                  <h3>Villas at poco diablo</h3>
-                    <span>Апартаменты</span>
-                      <span>От 2000р.</span>
-                  <a href="#" class="btn blue-btn">Подробнее</a>
-                  <a href="#" class="btn  brwn-btn">Забронировать</a>
-                  <p class="item-img">
-                    <a href="#">
-                  <img SRC="http://placehold.it/100x70" alt="Villas at poco diablo">
-                     </a>
-                </p>
-
-                   </li>
-              </ul>
-      </section>
-
-    <footer class="page-footer">
-      <span class="hashtag">#visitsedona</span>
-
-
-      <ul class="social">
-        <!-- Картинки соц. кнопок будут вставлены в css-->
-        <li>
-          <a href="twitter.com" class="social-btn tw">Twitter.com</a>
-        </li>
-        <li>
-          <a href="facebook.com" class="social-btn fb">facebook.com</a>
-        </li>
-        <li>
-          <a href="youtube.com" class="social-btn yt">youtube.com</a>
-        </li>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
       </ul>
 
-          <span>Website by</span><a href="htmlacademy.ru" class="HtmlA">Html Academy</a>
-    </footer>
-  </body>
+      <img class="logo-header" src="http://placehold.it/100x60" alt="Логотип" />
+    </nav>
+
+  </header>
+
+  <section class="search-form">
+    <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
+    <form action="/echo" method="post">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <input type="checkbox" name="swim-pool-check" id="swim-pool-check" class="сheckbox"><label for="swim-pool-check">Бассейн</label>
+
+        <input type="checkbox" name="parking-check" id="parking-check" class="сheckbox"><label for="parking-check">Парковка</label>
+
+        <input type="checkbox" name="wi-fi-check" id="wi-fi-check" class="сheckbox"> <label for="wi-fi-check">wi-fi</label>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+
+        <input type="checkbox" name="hotel-check" id="hotel-check" class="сheckbox"><label for="hotel-check">Гостиница</label>
+
+        <input type="checkbox" name="motel-check" id="motel-check" class="сheckbox"><label for="motel-check">Мотель</label>
+
+        <input type="checkbox" name="apartaments-check" id="apartaments-check" class="сheckbox"><label for="apartaments-check">Апартаменты</label>
+      </fieldset>
+    </form>
+  </section>
+
+  <section class="items">
+    <h2 class="visually-hidden">Список гостиниц</h2>
+    <ul class="search-result-list">
+      <li class="search-result-item">
+        <img SRC="http://placehold.it/100x70" Alt="Amara resort & spa">
+        <a href="#"><h3>Amara resort & spa </h3></a>
+        <div class="result-collumn-left">
+          <span>Гостиница</span>
+          <a href="#" class="btn blue-btn">Подробнее</a>
+        </div>
+        <div class="result-collumn-right">
+          <span>От 4000р.</span>
+          <a href="#" class="btn brwn-btn">Забронировать</a>
+        </div>
+        <div class="rating"></div>
+
+      </li>
+
+      <li class="search-result-item">
+        <img SRC="http://placehold.it/100x70" Alt="Desert qual inn">
+        <a href="#"><h3>Desert qual inn</h3></a>
+        <div class="result-collumn-left">
+          <span>Мотель</span>
+          <a href="#" class="btn blue-btn">Подробнее</a>
+        </div>
+        <div class="result-collumn-right">
+          <span>От 3000р.</span>
+          <a href="#" class="btn  brwn-btn">Забронировать</a>
+        </div>
+        <div class="rating"></div>
+
+      </li>
+
+      <li class="search-result-item">
+        <img SRC="http://placehold.it/100x70" alt="Villas at poco diablo">
+        <a href="#"><h3>Villas at poco diablo</h3></a>
+        <div class="result-collumn-left">
+          <span>Апартаменты</span>
+          <a href="#" class="btn blue-btn">Подробнее</a>
+        </div>
+        <div class="result-collumn-right">
+          <span>От 2000р.</span>
+          <a href="#" class="btn  brwn-btn">Забронировать</a>
+        </div>
+        <div class="rating"></div>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="page-footer">
+    <span class="hashtag">#visitsedona</span>
+
+
+    <ul class="social">
+      <!-- Картинки соц. кнопок будут вставлены в css-->
+      <li>
+        <a href="twitter.com" class="social-btn tw">Twitter.com</a>
+      </li>
+      <li>
+        <a href="facebook.com" class="social-btn fb">facebook.com</a>
+      </li>
+      <li>
+        <a href="youtube.com" class="social-btn yt">youtube.com</a>
+      </li>
+    </ul>
+
+    <span>Website by</span><a href="htmlacademy.ru" class="htmlacademy">Html Academy</a>
+  </footer>
+</body>
+
 </html>
