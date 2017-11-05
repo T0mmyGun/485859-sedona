@@ -42,6 +42,16 @@
 
         <input type="checkbox" name="apartaments-check" id="apartaments-check" class="сheckbox"><label for="apartaments-check">Апартаменты</label>
       </fieldset>
+      <fieldset>
+        <legend class="visually-hidden">Стоимость</legend>
+        <div class="value-field">
+          <label for="value-range">Стоимость  в сутки(Р):</label>
+          <div class="value-description"><span>От 0</span><span>до 3000</span></div>
+          <!--к range применится скрипт для двойного бегунка-->
+          <input type="range" id="value-range" min="0" max="3000" step="1" />
+        </div>
+        <input type="submit" value="Показать" class="submit-filter">
+      </fieldset>
     </form>
   </section>
 
