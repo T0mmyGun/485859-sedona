@@ -27,30 +27,47 @@
     <form action="/echo" method="post">
       <fieldset>
         <legend>Инфраструктура:</legend>
-        <input type="checkbox" name="swim-pool-check" id="swim-pool-check" class="сheckbox"><label for="swim-pool-check">Бассейн</label>
+        <ul>
+          <li>
+            <input type="checkbox" name="swim-pool-check" id="swim-pool-check" class="visually-hidden filter-input filter-сheckbox"><label for="swim-pool-check">Бассейн</label>
+          </li>
+          <li>
 
-        <input type="checkbox" name="parking-check" id="parking-check" class="сheckbox"><label for="parking-check">Парковка</label>
+            <input type="checkbox" name="parking-check" id="parking-check" class="visually-hidden filter-input filter-сheckbox"><label for="parking-check">Парковка</label>
+          </li>
 
-        <input type="checkbox" name="wi-fi-check" id="wi-fi-check" class="сheckbox"> <label for="wi-fi-check">wi-fi</label>
+          <li>
+
+            <input type="checkbox" name="wi-fi-check" id="wi-fi-check" class="visually-hidden filter-input filter-сheckbox"> <label for="wi-fi-check">Wi-Fi</label>
+          </li>
+          <ul>
       </fieldset>
       <fieldset>
         <legend>Тип жилья:</legend>
+        <ul>
+          <li>
 
-        <input type="checkbox" name="hotel-check" id="hotel-check" class="сheckbox"><label for="hotel-check">Гостиница</label>
+            <input type="checkbox" name="hotel-check" id="hotel-check" class="visually-hidden filter-input filter-сheckbox"><label for="hotel-check">Гостиница</label>
+          </li>
+          <li>
 
-        <input type="checkbox" name="motel-check" id="motel-check" class="сheckbox"><label for="motel-check">Мотель</label>
+            <input type="checkbox" name="motel-check" id="motel-check" class="visually-hidden filter-input filter-сheckbox"><label for="motel-check">Мотель</label>
+          </li>
+          <li>
 
-        <input type="checkbox" name="apartaments-check" id="apartaments-check" class="сheckbox"><label for="apartaments-check">Апартаменты</label>
+            <input type="checkbox" name="apartaments-check" id="apartaments-check" class="visually-hidden filter-input filter-сheckbox"><label for="apartaments-check">Апартаменты</label>
+          </li>
+          <ul>
       </fieldset>
       <fieldset>
         <legend class="visually-hidden">Стоимость</legend>
-        <div class="value-field">
-          <label for="value-range">Стоимость  в сутки(Р):</label>
-          <div class="value-description"><span>От 0</span><span>до 3000</span></div>
+        <div class="filter-value-field">
+          <label for="filter-value-range">Стоимость  в сутки(Р):</label>
+          <div class="filter-value-description"><span>От 0</span><span>до 3000</span></div>
           <!--к range применитс скрипт для двойного бегунка-->
-          <input type="range" id="value-range" min="0" max="3000" step="1" />
+          <input type="range" id="filter-value-range" min="0" max="3000" step="1" />
         </div>
-        <input type="submit" value="Показать" class="submit-filter">
+        <input type="submit" value="Показать" class="filter-submit">
       </fieldset>
     </form>
   </section>
@@ -69,7 +86,22 @@
           <span>От 4000р.</span>
           <a href="#" class="btn brwn-btn">Забронировать</a>
         </div>
-        <div class="rating"></div>
+
+        <div class="hotel-rating">
+          <p>
+          <ul class="starbar">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </p>
+          <p>
+            <span class="rating-text">Рейтинг 8.5</span>
+          </p>
+
+        </div>
 
       </li>
 
@@ -85,7 +117,19 @@
           <span>От 3000р.</span>
           <a href="#" class="btn  brwn-btn">Забронировать</a>
         </div>
-        <div class="rating"></div>
+        <div class="hotel-rating">
+          <p>
+          <ul class="starbar">
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
+          </p>
+          <p>
+            <span class="rating-text">Рейтинг 8.9</span>
+          </p>
+
+        </div>
 
       </li>
 
@@ -100,7 +144,18 @@
           <span>От 2000р.</span>
           <a href="#" class="btn  brwn-btn">Забронировать</a>
         </div>
-        <div class="rating"></div>
+        <div class="hotel-rating">
+          <p>
+          <ul class="starbar">
+            <li></li>
+            <li></li>
+          </ul>
+        </p>
+        <p>
+          <span class="rating-text">Рейтинг 9.2</span>
+        </p>
+
+        </div>
       </li>
     </ul>
   </section>

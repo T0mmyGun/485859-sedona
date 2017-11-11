@@ -95,11 +95,11 @@
         <li class="reason reason-info-white">
           <h3>Красивая дорога</h3>
           <p>— №4 —</p>
-          <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+          <p>Ехать в седону из Лас-вегаса совсем не скучно!</p>
         </li>
 
         <li class="reason reason-info-white">
-          <h3>>Мало туристов</h3>
+          <h3>Мало туристов</h3>
           <p>— №5 —</p>
           <p>Большинство едет в гранд каньон и толпится там</p>
         </li>
@@ -110,24 +110,31 @@
       <h2>Забронировать отель</h2>
       <p class="bold"><b>Заинтересовались?</b></p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a Class="btn brwn-btn" href="form.html">Поиск гостиницы в Седоне</a>
+      <button type="button" Class="btn brwn-btn" href="form.html">Поиск гостиницы в Седоне</button>
       <!--Открывает следующий блок, с помощью js-->
       </section>
       <section class="popup">
         <h2 class="visually-hidden">Форма поиска гостиниц</h2>
         <form action="/echo" method="post">
           <fieldset>
-            <label>Дата заезда<input type="date" name="date-of-arrival" id="date-of-arrival" required></label>
-            <label>Дата выезда<input type="date" name=" date-of-departure" id="date-of-departure" required></label>
-            <label>Взрослые:<input type="number" min="1" name="adult-amount" id="adult-amount" required></label>
-            <label>Дети:<input type="number" min="1" name="child-amount" id="child-amount"></label>
+            <p>
+            <label>Дата заезда<input type="date" name="date-of-arrival" id="date-of-arrival" placeholder="24 апреля 2017" required></label>
+          </p>
+          <p>
+            <label>Дата выезда<input type="date" name=" date-of-departure" id="date-of-departure" placeholder="4 июля 2017" required></label>
+          </p>
+          <p>
+            <label>Взрослые:<input type="number" min="1" name="adult-amount" id="adult-amount" placeholder="2" required></label>
+            <label>Дети:<input type="number" min="1" name="child-amount" id="child-amount" placeholder="0"></label>
+          </p>
             <input type="submit" value="Найти" />
           </fieldset>
         </form>
       </section>
 
-
-    <!-- Тут будет карта-->
+      <article class="map">
+    <img src="img/map.jpg" Width="50%" alt="Седона на карте">
+  </article>
   </main>
 
   <footer class="page-footer">
