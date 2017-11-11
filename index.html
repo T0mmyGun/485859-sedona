@@ -30,8 +30,8 @@
       <!--Горы будут бэкграундом к title-block-->
       <h1>Седона</h1>
       <div class="title-text">
-  <img src="img/title.png" alt="Welcome-to-Sedona" class="title-img">
-  </div>
+        <img src="img/title.png" alt="Welcome-to-Sedona" class="title-img">
+      </div>
 
     </section>
 
@@ -110,31 +110,32 @@
       <h2>Забронировать отель</h2>
       <p class="bold"><b>Заинтересовались?</b></p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button type="button" Class="btn brwn-btn" href="form.html">Поиск гостиницы в Седоне</button>
+      <button type="button" Class="btn brwn-btn" >Поиск гостиницы в Седоне</button>
       <!--Открывает следующий блок, с помощью js-->
-      </section>
-      <section class="popup">
-        <h2 class="visually-hidden">Форма поиска гостиниц</h2>
-        <form action="/echo" method="post">
-          <fieldset>
-            <p>
-            <label>Дата заезда<input type="date" name="date-of-arrival" id="date-of-arrival" placeholder="24 апреля 2017" required></label>
+    </section>
+    <section class="popup">
+      <h2 class="visually-hidden">Форма поиска гостиниц</h2>
+      <form action="/echo" method="post">
+        <fieldset>
+          <p>
+            <label>Дата заезда<input type="date" name="date-of-arrival" id="date-of-arrival" required></label>
           </p>
           <p>
-            <label>Дата выезда<input type="date" name=" date-of-departure" id="date-of-departure" placeholder="4 июля 2017" required></label>
+            <label>Дата выезда<input type="date" name=" date-of-departure" id="date-of-departure" ></label>
           </p>
           <p>
             <label>Взрослые:<input type="number" min="1" name="adult-amount" id="adult-amount" placeholder="2" required></label>
             <label>Дети:<input type="number" min="1" name="child-amount" id="child-amount" placeholder="0"></label>
           </p>
-            <input type="submit" value="Найти" />
-          </fieldset>
-        </form>
-      </section>
+          <input type="submit" value="Найти" class="btn blue-btn"/>
+        </fieldset>
+      </form>
+    </section>
 
-      <article class="map">
-    <img src="img/map.jpg" Width="50%" alt="Седона на карте">
-  </article>
+    <article class="map">
+      <h2 class="visually-hidden">Седона на карте</h2>
+      <img src="img/map.jpg" width="600" alt="Седона на карте">
+    </article>
   </main>
 
   <footer class="page-footer">
