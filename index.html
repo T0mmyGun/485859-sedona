@@ -17,7 +17,7 @@
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
 
-      <a href="#"><img class="logo-header" src="img/logo_sedona.png" alt="Логотип" /></a>
+      <a><img class="logo-header" src="img/logo_sedona.png" alt="Логотип" /></a>
     </nav>
 
   </header>
@@ -26,11 +26,10 @@
   <main class="page-content">
 
 
-    <section class="title-block">
-      <!--Горы будут бэкграундом к title-block-->
-      <h1>Седона</h1>
-      <div class="title-text">
-        <img src="img/title.png" alt="Welcome-to-Sedona" class="title-img">
+    <section class="promo">
+  <h1 class="visually-hidden">Седона</h1>
+      <div class="promo-text">
+        <img src="img/title.png" alt="Добро пожаловать в Седону" class="title-img">
       </div>
 
     </section>
@@ -110,13 +109,12 @@
       <h2>Забронировать отель</h2>
       <p class="bold"><b>Заинтересовались?</b></p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button type="button" Class="btn brwn-btn" >Поиск гостиницы в Седоне</button>
+      <a href="#" Class="btn brown-btn" >Поиск гостиницы в Седоне</a>
       <!--Открывает следующий блок, с помощью js-->
     </section>
     <section class="popup">
       <h2 class="visually-hidden">Форма поиска гостиниц</h2>
-      <form action="/echo" method="post">
-        <fieldset>
+      <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label>Дата заезда<input type="date" name="date-of-arrival" id="date-of-arrival" required></label>
           </p>
@@ -128,14 +126,13 @@
             <label>Дети:<input type="number" min="1" name="child-amount" id="child-amount" placeholder="0"></label>
           </p>
           <input type="submit" value="Найти" class="btn blue-btn"/>
-        </fieldset>
       </form>
     </section>
 
-    <article class="map">
+    <section class="map">
       <h2 class="visually-hidden">Седона на карте</h2>
-      <img src="img/map.jpg" width="600" alt="Седона на карте">
-    </article>
+      <img src="img/map.jpg" width="600" alt="Как доехать до Седоны">
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -155,7 +152,7 @@
       </li>
     </ul>
 
-    <span>Website by</span><a href="htmlacademy.ru" class="htmlacademy">Html Academy</a>
+    <span>Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">Html Academy</a>
   </footer>
 </body>
 

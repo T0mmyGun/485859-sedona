@@ -14,7 +14,7 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a>Гостиницы</a></li>
       </ul>
 
       <a href="index.html"><img class="logo-header" src="img/logo_sedona.png" alt="Логотип" /></a>
@@ -24,7 +24,7 @@
 
   <section class="search-form">
     <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
-    <form action="/echo" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <ul>
@@ -71,6 +71,20 @@
       </fieldset>
     </form>
   </section>
+  <div class="sorting-field">
+    <span class="bold">Найдено:3</span>
+    <span class="bold">Сортировка:</span>
+    <ul class="sorting-method">
+      <li><a href="#">По цене</a></li>
+      <li><a href="#">По типу</a></li>
+      <li><a href="#">По рейтингу</a></li>
+    </ul>
+  <div class="order-field">
+    <a href="#" class="asc"></a>
+      <a href="#" class="desc"></a>
+  </div>
+
+  </div>
 
   <section class="items">
     <h2 class="visually-hidden">Список гостиниц</h2>
@@ -79,6 +93,7 @@
         <div class="search-img">
           <img SRC="img/amara.png" Alt="Amara resort & spa">
         </div>
+          <div class="search-result-info">
         <a href="#"><h3>Amara resort & spa </h3></a>
         <div class="result-collumn-left">
           <span>Гостиница</span>
@@ -86,8 +101,9 @@
         </div>
         <div class="result-collumn-right">
           <span>От 4000р.</span>
-          <a href="#" class="btn brwn-btn">Забронировать</a>
+          <a href="#" class="btn brown-btn">Забронировать</a>
         </div>
+      </div>
 
         <div class="hotel-rating">
 
@@ -109,8 +125,9 @@
 
       <li class="search-result-item">
         <div class="search-img">
-          <img SRC="img/qual_inn.png" Alt="Desert qual inn">
+          <img src="img/qual_inn.png" Alt="Desert qual inn">
         </div>
+        <div class="search-result-info">
         <a href="#"><h3>Desert qual inn</h3></a>
         <div class="result-collumn-left">
           <span>Мотель</span>
@@ -118,7 +135,8 @@
         </div>
         <div class="result-collumn-right">
           <span>От 3000р.</span>
-          <a href="#" class="btn  brwn-btn">Забронировать</a>
+          <a href="#" class="btn  brown-btn">Забронировать</a>
+        </div>
         </div>
         <div class="hotel-rating">
 
@@ -140,6 +158,7 @@
         <div class="search-img">
           <img SRC="img/poco_diablo.png" alt="Villas at poco diablo">
         </div>
+          <div class="search-result-info">
         <a href="#"><h3>Villas at poco diablo</h3></a>
         <div class="result-collumn-left">
           <span>Апартаменты</span>
@@ -147,8 +166,9 @@
         </div>
         <div class="result-collumn-right">
           <span>От 2000р.</span>
-          <a href="#" class="btn  brwn-btn">Забронировать</a>
+          <a href="#" class="btn  brown-btn">Забронировать</a>
         </div>
+      </div>
         <div class="hotel-rating">
 
           <ul class="starbar">
@@ -182,7 +202,7 @@
       </li>
     </ul>
 
-    <span>Website by</span><a href="htmlacademy.ru" class="htmlacademy">Html Academy</a>
+    <span>Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">Html Academy</a>
   </footer>
 </body>
 
