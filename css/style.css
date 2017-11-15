@@ -69,8 +69,14 @@ header {
   padding-top: 70px;
   padding-bottom: 90px;
   text-align: center;
-  background: #647e94 0 20% no-repeat url(../img/mountains.jpg);
-  background-size: 100% auto;
+  background-color: #647e94;
+  background-image: url(../img/title-mask.png),
+   url(../img/mountains.jpg);
+    background-position:0 100%, 0 20%;
+    background-clip: padding-box;
+    background-origin: border-box;
+    background-size: 100% auto, cover;
+    background-repeat: no-repeat;
 }
 
 .demo-block p:first-child {
