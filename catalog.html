@@ -4,9 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 </head>
 
-<body>
+<body class="catalog-page">
   <header class="page-header">
 
     <nav class="main-navigation">
@@ -14,7 +18,7 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a>Гостиницы</a></li>
+        <li><a class="current">Гостиницы</a></li>
       </ul>
 
       <a href="index.html"><img class="logo-header" src="img/logo_sedona.png" alt="Логотип" /></a>
@@ -62,7 +66,7 @@
       <fieldset>
         <legend class="visually-hidden">Стоимость</legend>
         <div class="filter-value-field">
-          <label for="filter-value-range">Стоимость  в сутки(Р):</label>
+          <label for="filter-value-range"><b>Стоимость  в сутки(Р):</b></label>
           <div class="filter-value-description"><span>От 0</span><span>до 3000</span></div>
           <!--к range применитс скрипт для двойного бегунка-->
           <input type="range" id="filter-value-range" min="0" max="3000" step="1" />
@@ -94,7 +98,7 @@
           <img SRC="img/amara.png" Alt="Amara resort & spa">
         </div>
           <div class="search-result-info">
-        <a href="#"><h3>Amara resort & spa </h3></a>
+        <a href="#" class="item-name"><h3>Amara resort & spa </h3></a>
         <div class="result-collumn-left">
           <span>Гостиница</span>
           <a href="#" class="btn blue-btn">Подробнее</a>
@@ -128,7 +132,7 @@
           <img src="img/qual_inn.png" Alt="Desert qual inn">
         </div>
         <div class="search-result-info">
-        <a href="#"><h3>Desert qual inn</h3></a>
+        <a href="#" class="item-name"><h3>Desert qual inn</h3></a>
         <div class="result-collumn-left">
           <span>Мотель</span>
           <a href="#" class="btn blue-btn">Подробнее</a>
@@ -159,7 +163,7 @@
           <img SRC="img/poco_diablo.png" alt="Villas at poco diablo">
         </div>
           <div class="search-result-info">
-        <a href="#"><h3>Villas at poco diablo</h3></a>
+        <a href="#" class="item-name"><h3>Villas at poco diablo</h3></a>
         <div class="result-collumn-left">
           <span>Апартаменты</span>
           <a href="#" class="btn blue-btn">Подробнее</a>
@@ -186,7 +190,7 @@
   </section>
 
   <footer class="page-footer">
-    <span class="hashtag">#visitsedona</span>
+    <span class="bold">#visitsedona</span>
 
 
     <ul class="social">

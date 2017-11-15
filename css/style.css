@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+body.catalog-page {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.bold {
+  text-weight: bold;
+}
+
+.page-content {
+  background-color: #ffffff;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-navigation {
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.main-navigation a:hover, .main-navigation a:focus {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation a.current, .main-navigation a.current:hover, .main-navigation a.current:focus, .main-navigation a.current:active {
+  color: #766357;
+}
+
+.promo {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  text-align: center;
+  background: #647e94 0 20% no-repeat url(../img/mountains.jpg);
+  background-size: 100% auto;
+}
+
+.demo-block p:first-child {
+  font-size: 21px;
+}
+
+.reasons {
+  line-height: 21px;
+}
+
+.reasons ul, .offers {
+  list-style: none;
+}
+
+.reason h3, .offer h3 {
+  font-size: 21px;
+  text-weight: bold;
+}
+
+.reason-wide .reason-info {
+  color: white;
+  background-color: #81b3d2;
+}
+
+.booking-preview p {
+  line-height: 24px;
+}
+
+.booking-preview .bold {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.brown-btn {
+  background-color: #766357;
+}
+
+.brown-btn:hover, .social-btn:focus {
+  background-color: #604e43;
+}
+
+.brown-btn:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.popup {
+  font-weight: bold;
+}
+
+.popup input:not(.btn) {
+  font: inherit;
+  Background-color: #f2f2f2;
+  border: none;
+}
+
+.blue-btn {
+  background-color: #81b3d2;
+}
+
+.blue-btn:hover, .blue-btn:focus {
+  background-color: #669ec0;
+}
+
+.blue-btn:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.social {
+  list-style: none;
+}
+
+.social-btn {
+  background-color: #81b3d2;
+}
+
+.social-btn:hover, .social-btn:focus {
+  background-color: #669ec0;
+}
+
+.social-btn:active {
+  background-color: #5496bd;
+}
+
+.search-form {
+  position: relative;
+  background: #647e94 0 20% no-repeat url(../img/mountains.jpg);
+  background-size: 100% auto;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.search-form fieldset {
+  border: none;
+}
+
+.search-form legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search-form ul {
+  list-style: none;
+}
+.filter-submit{
+  font: inherit;
+  color: #ffffff;
+  border: 2px #ffffff solid;
+  background: transparent;
+}
+.sorting-field {
+  background-color: #ffffff;
+}
+
+.items {
+  background-color: #ffffff;
+}
+
+.sorting-field ul {
+  list-style: none;
+}
+
+.rating-text {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.items ul {
+  list-style: none;
+}
+
+a.item-name:hover, a.item-name:focus {
+  color: #81b3d2;
+}
+
+a.item-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
