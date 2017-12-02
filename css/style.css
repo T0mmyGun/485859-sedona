@@ -118,10 +118,12 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
 }
 
-
 .main-navigation li{
+  box-sizing: border-box;
   width: 20%;
   vertical-align: middle;
+  line-height: 56px;
+  padding: auto 70px;
 
 }
 
@@ -313,7 +315,14 @@ input[type="radio"].visually-hidden {
   width: 800px;
 	position:relative;
   overflow: hidden;
+}
 
+.reason-wide .reason-img{
+  background-color: #bb887a;
+}
+
+.reason-wide-reverse .reason-img{
+  background-color: #cf8065;
 }
 
 .tile-picture{
@@ -533,6 +542,7 @@ input[type="radio"].visually-hidden {
   font: inherit;
   text-transform: inherit;
   line-height: 38px;
+  height: 40px;
 
   Background-color: #f2f2f2;
   border: none;
@@ -592,8 +602,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.amount-field label:first-of-type {
+.adult-amount-field label{
   margin-right: 42px;
+}
+
+.child-amount-field label{
+  margin-right: 25px;
 }
 
 .date-field input {
@@ -634,18 +648,18 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
 
-  right: 15px;
+  right: 10px;
 
   background-color: transparent;
   border: none;
 }
 
 .date-of-arrival-calendar{
-  top: 5px;
+  top: 7px;
 }
 
 .date-of-departure-calendar{
-  top: 75px;
+  top: 77px;
 }
 
 .calendar svg{
@@ -729,6 +743,8 @@ fill-opacity: 1;
   position:relative;
   width: 100%;
   height: 473px;
+
+  background-color: #dee6c9;
 }
 
 .map img{
@@ -1037,6 +1053,7 @@ input.start-value{
 
 .price-controls input {
   width: 50px;
+  height: 26px;
   margin: 0;
 
   color: inherit;
