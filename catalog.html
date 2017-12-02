@@ -11,6 +11,8 @@
 </head>
 
 <body class="catalog-page">
+
+  <div class="page-wrapper">
   <header class="page-header">
 
     <nav class="main-navigation">
@@ -32,12 +34,13 @@
   <section class="search-form">
     <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
+
       <div class="infrastructure">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <ul>
           <li>
-            <input type="checkbox" name="swim-pool-check" id="swim-pool-check" class="visually-hidden filter-input filter-сheckbox"><label for="swim-pool-check">Бассейн</label>
+            <input type="checkbox" name="swim-pool-check" id="swim-pool-check" class="visually-hidden filter-input filter-сheckbox" checked><label for="swim-pool-check">Бассейн</label>
           </li>
           <li>
 
@@ -65,7 +68,7 @@
           </li>
           <li>
 
-            <input type="checkbox" name="apartaments-check" id="apartaments-check" class="visually-hidden filter-input filter-сheckbox"><label for="apartaments-check" checked>Апартаменты</label>
+            <input type="checkbox" name="apartaments-check" id="apartaments-check" class="visually-hidden filter-input filter-сheckbox" checked><label for="apartaments-check" checked>Апартаменты</label>
           </li>
         </ul>
       </fieldset>
@@ -84,15 +87,19 @@
         <div class="range-toggle range-toggle-max"></div>
       </div>
       <button class="btn-transparent" type="submit">Показать</button>
+
     </form>
   </section>
+
+
+
   <div class="sorting-field">
-    <span class="bold">Найдено:3</span>
-    <span>Сортировка:</span>
+    <span class="bold">Найдено: 3</span>
+    <span>сортировка:</span>
     <ul class="sorting-method">
-      <li><button class="sorting-btn current">По цене</button></li>
-      <li><button class="sorting-btn">По типу</button></li>
-      <li><button class="sorting-btn">По рейтингу</button></li>
+      <li><button class="sorting-btn current">по цене</button></li>
+      <li><button class="sorting-btn">по типу</button></li>
+      <li><button class="sorting-btn">по рейтингу</button></li>
     </ul>
   <div class="order-field">
     <button class="order-direction asc"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path  d="M5.5 0L0 10h11z"/></svg></button>
@@ -127,7 +134,6 @@
         <div class="hotel-rating">
 
           <ul class="starbar">
-            <li></li>
             <li></li>
             <li></li>
             <li></li>
@@ -182,9 +188,9 @@
           <img src="img/poco_diablo.png" width="100%" height="auto" alt="Villas at poco diablo">
         </div>
         <div class="search-result-info">
-
+          <div class="result-title">
       <a href="#" class="item-name"><h3>Villas at poco diablo</h3></a>
-
+    </div>
 
       <div class="result-collumn result-collumn-left">
         <span>Апартаменты </span>
@@ -238,6 +244,7 @@
     </a>
   </div>
   </footer>
+</div>
 </body>
 
 </html>
