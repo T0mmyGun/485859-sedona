@@ -120,7 +120,7 @@
       <div class="booking-container">
       <p class="bold"><b>Заинтересовались?</b></p>
       <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a href="#" Class="btn brown-btn search-hotel-btn">Поиск гостиницы в Седоне</a>
+      <a href="login.html" Class="btn brown-btn search-hotel-btn">Поиск гостиницы в Седоне</a>
     </div>
     </section>
 
@@ -200,6 +200,43 @@
   </div>
   </footer>
 </div>
+
+<script>
+  var link = document.querySelector(".search-hotel-btn");
+
+  var popup = document.querySelector(".popup");
+
+  var form = popup.querySelector("form");
+
+   var arrival_date = popup.querySelector("[name=date-of-arrival]");
+
+   var departure_date = popup.querySelector("[name=date-of-departure]");
+
+   var adult_amount = popup.querySelector("[name=adult-amount]");
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("popup-show");
+    arrival_date.focus();
+  });
+  form.addEventListener("submit", function (evt) {
+    if (!arrival_date.value || !departure_date.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+    }
+  });
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+</script>
+</script>
 </body>
 
 </html>
