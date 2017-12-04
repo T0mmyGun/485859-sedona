@@ -108,6 +108,8 @@ input[type="radio"].visually-hidden {
           align-items: center;
   min-height: 56px;
   padding: 0;
+padding-left: 10px;
+box-sizing: border-box;
   margin: 0;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
