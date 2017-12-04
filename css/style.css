@@ -494,25 +494,29 @@ input[type="radio"].visually-hidden {
 
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
 
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(-8%);
+    }
+    65%{
+        transform: translateY(4%);
+    }
+    80%{
+        transform: translateY(-4%);
+    }
+    95%{
+        transform: translateY(2%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
-@keyframes shake {
+@keyframes shake{
   0%,
   100% {
     transform: translateX(0);
@@ -552,8 +556,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-show{
-  display: block;
-  animation: bounce 0.6s;
+  display: block; animation: slideUp 0.6s;
 }
 
 .popup-error {
@@ -665,6 +668,10 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   width: 345px;
   padding-left: 10px;
+}
+
+.date-field input::-ms-clear{
+  display: none;
 }
 
 .date-field label{
@@ -790,27 +797,37 @@ fill-opacity: 1;
 
 
 .map{
-  position:relative;
+  position: relative;
   width: 100%;
-  height: 473px;
+  height: 595px;
 
   background-color: #dee6c9;
 }
 
 .map img{
-	position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   width: 1200px;
   height: 595px;
+}
 
-  z-index: 1;
-  left: 0;
-  top:-5;
+.map img{
+  width: 1200px;
+  height: 595px;
+}
+
+.map iframe{
+  width: 1200px;
+  height: 595px;
+  z-index: 0;
 }
 
 
 
+
 .page-footer{
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -832,12 +849,15 @@ fill-opacity: 1;
 
   padding-bottom: 36px;
   background-color: #ffffff;
+    z-index: 2;
 }
 
-.index-page-footer{
+.index-page-footer{position: relative;
   z-index: 2;
   background-color: rgba(256,256,256,0.8);
+  margin-top: -120px;
 }
+
 
 .hashtag{
   font-size: 21px;
@@ -1231,7 +1251,6 @@ input.start-value{
 
   font-size: 12px;
   line-height: 18px;
-  text-transform: none;
 }
 
 .sorting-method{
@@ -1476,7 +1495,15 @@ input.start-value{
   margin-left: auto;
 }
 
-.hotel-rating *{
+.hotel-rating span{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 13px;
+}
+
+.hotel-rating ul{
   margin: 0;
   padding: 0;
 }
