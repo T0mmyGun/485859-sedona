@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 
 <head>
   <meta charset="utf-8">
@@ -7,6 +7,10 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
   <link href="css/normalize.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <script>
+      document.documentElement
+        .classList.replace('no-js', 'js');
+    </script>
 </head>
 
 <body>
@@ -121,7 +125,7 @@
       <section class="map">
         <h2 class="visually-hidden">Седона на карте</h2>
 
-        <section class="popup popup-show">
+        <section class="popup">
           <h2 class="visually-hidden">Форма поиска гостиниц</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="popup-content">
@@ -205,10 +209,6 @@
     var storage = localStorage.getItem("adult_amount");
 
     var storage1 = localStorage.getItem("child_amount");
-
-    window.onload = function() {
-      popup.classList.remove("popup-show");
-    }
 
     link.addEventListener("click", function(evt) {
       evt.preventDefault();
