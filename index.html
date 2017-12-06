@@ -7,10 +7,6 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
   <link href="css/normalize.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
-  <script>
-      document.documentElement
-        .classList.replace('no-js', 'js');
-    </script>
 </head>
 
 <body>
@@ -118,7 +114,7 @@
         <div class="booking-container">
           <p class="bold"><b>Заинтересовались?</b></p>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="login.html" Class="btn brown-btn search-hotel-btn">Поиск гостиницы в Седоне</a>
+          <a href="login.html" class="btn brown-btn search-hotel-btn">Поиск гостиницы в Седоне</a>
         </div>
       </section>
 
@@ -167,19 +163,19 @@
     </main>
 
     <footer class="page-footer index-page-footer">
-      <div class="hashtag">
-        <span class="bold"> #visitsedona </span>
+      <div class="hashtag bold">
+        #visitsedona
       </div>
 
       <ul class="social">
         <li>
-          <a href="http://twitter.com" class="btn social-btn twitter-btn"></a>
+          <a href="http://twitter.com" class="btn social-btn twitter-btn"><span class="visually-hidden">Twitter</span></a>
         </li>
         <li>
-          <a href="http://facebook.com" class="btn social-btn facebook-btn"></a>
+          <a href="http://facebook.com" class="btn social-btn facebook-btn"><span class="visually-hidden">Facebook</span></a>
         </li>
         <li>
-          <a href="http://youtube.com" class="btn social-btn youtube-btn"></a>
+          <a href="http://youtube.com" class="btn social-btn youtube-btn"><span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
 
@@ -191,60 +187,8 @@
     </footer>
   </div>
 
-  <script>
-    var link = document.querySelector(".search-hotel-btn");
-
-    var popup = document.querySelector(".popup");
-
-    var form = popup.querySelector("form");
-
-    var arrival_date = popup.querySelector("[name=date-of-arrival]");
-
-    var departure_date = popup.querySelector("[name=date-of-departure]");
-
-    var adult_amount = popup.querySelector("[name=adult-amount]");
-
-    var child_amount = popup.querySelector("[name=child-amount]");
-
-    var storage = localStorage.getItem("adult_amount");
-
-    var storage1 = localStorage.getItem("child_amount");
-
-    link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.toggle("popup-show");
-      arrival_date.focus();
-      if (storage) {
-      adult_amount.value = storage;
-    }
-    if (storage1) {
-    child_amount.value = storage1;
-  }
-    });
-
-    form.addEventListener("submit", function(evt) {
-      if (!arrival_date.value || !departure_date.value || !adult_amount.value) {
-        evt.preventDefault();
-        popup.classList.remove("popup-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("popup-error");
-      } else {
-      localStorage.setItem("adult_amount", adult_amount.value);
-      localStorage.setItem("child_amount", child_amount.value);
-  }
-    });
-
-
-    window.addEventListener("keydown", function(evt) {
-      if (evt.keyCode === 27) {
-        if (popup.classList.contains("popup-show")) {
-          evt.preventDefault();
-          popup.classList.remove("popup-show");
-          popup.classList.remove("popup-error");
-        }
-      }
-    });
-  </script>
+<script src="js/script.js">
+</script>
 </body>
 
 </html>
