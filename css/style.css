@@ -583,12 +583,7 @@ box-sizing: border-box;
   animation: shake 0.6s;
 }
 
-.popup-content{
-  position: relative;
-  padding: 0;
-}
-
-.popup-content p{
+.popup p{
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -726,18 +721,18 @@ box-sizing: border-box;
   padding: 0;
   margin: 0;
 
-  right: 10px;
+  right: 70px;
 
   background-color: transparent;
   border: none;
 }
 
 .date-of-arrival-calendar{
-  top: 7px;
+  top: 65px;
 }
 
 .date-of-departure-calendar{
-  top: 77px;
+  top: 130px;
 }
 
 .calendar svg{
@@ -804,7 +799,7 @@ fill-opacity: 1;
   background-color: #5496bd;
 }
 
-.popup-content .blue-btn{
+.popup .blue-btn{
   display: block;
   height: 58px;
   width: 100%;
